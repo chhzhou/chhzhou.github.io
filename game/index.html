@@ -114,7 +114,7 @@
 					//callArgs.push(player);
 					callArgs.push(score);
 					nebPay.call(to, value, callFunction, JSON.stringify(callArgs), { //使用nebpay的call接口去调用合约,
-						listener: function(resp){layer.alert("提交成功");getList(0,30);}
+						listener: function(resp){getList(0,30);}
 					});
 				};
 				
